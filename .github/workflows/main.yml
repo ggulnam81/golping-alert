@@ -51,7 +51,6 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-          cache: "pip"  # 의존성 캐싱으로 실행 속도 향상
 
       # ── Step 3: 의존성 설치 ──────────────────────────────────────────────
       - name: 📦 라이브러리 설치
