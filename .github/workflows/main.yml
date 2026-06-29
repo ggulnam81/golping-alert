@@ -43,6 +43,8 @@ jobs:
           SENDER_EMAIL: ${{ secrets.SENDER_EMAIL }}
           SENDER_PASSWORD: ${{ secrets.SENDER_PASSWORD }}
           RECEIVER_EMAIL: ${{ secrets.RECEIVER_EMAIL }}
+          FORCE_EMAIL: "true"
+
         run: python main.py
 
       # ── Step 5: last_product.txt 변경 시 저장소에 커밋/푸시
